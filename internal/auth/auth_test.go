@@ -24,4 +24,3 @@ func TestGetAPIKey_Valid(t *testing.T) {
 		t.Fatalf("expected abc123, got %q", key)
 	}
 }
-
