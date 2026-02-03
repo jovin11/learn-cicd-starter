@@ -21,9 +21,10 @@ jobs:
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v3
-
-      - name: Set GCP project
-        run: gcloud config set project notely-486315
+        with:
+          project_id: notely-486315
+          service_account_key: ${{ secrets.GCP_CREDENTIALS }}
+          export_default_credentials: true
 
       - name: Use gcloud CLI
         run: gcloud info
