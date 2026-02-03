@@ -2,3 +2,19 @@ out
 .env
 learn-cicd-starter
 notely
+
+# Google Cloud SDK / installers
+google-cloud-sdk/
+google-cloud-cli-*.tar.gz
+
+# Go vendor (if you don't want it tracked)
+vendor/
+
+# Binaries and build outputs
+notely
+bin/
+dist/
+build/
+
+# OS files
+.DS_Store
